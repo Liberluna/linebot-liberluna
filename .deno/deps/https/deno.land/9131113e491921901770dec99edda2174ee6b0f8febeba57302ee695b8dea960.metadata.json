@@ -1,0 +1,16 @@
+{
+  "headers": {
+    "vary": "Accept-Encoding",
+    "date": "Sun, 23 Apr 2023 11:34:04 GMT",
+    "location": "/x/hono@v3.1.6/mod.ts",
+    "x-deno-warning": "Implicitly using latest version (v3.1.6) for https://deno.land/x/hono/mod.ts",
+    "via": "http/2 edgeproxy",
+    "server": "deno/gcp-us-east1",
+    "access-control-allow-origin": "*"
+  },
+  "url": "https://deno.land/x/hono/mod.ts",
+  "now": {
+    "secs_since_epoch": 1682249644,
+    "nanos_since_epoch": 932746027
+  }
+}

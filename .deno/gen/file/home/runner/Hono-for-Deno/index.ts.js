@@ -1,0 +1,9 @@
+import { serve } from 'https://deno.land/std@0.184.0/http/server.ts';
+import { Hono } from 'hono';
+import { serveStatic } from "hono/middleware";
+const app = new Hono();
+app.use('/*', serveStatic({
+    root: "./static/"
+}));
+serve(app.fetch);
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImZpbGU6Ly8vaG9tZS9ydW5uZXIvSG9uby1mb3ItRGVuby9pbmRleC50cyJdLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyBzZXJ2ZSB9IGZyb20gJ2h0dHBzOi8vZGVuby5sYW5kL3N0ZEAwLjE4NC4wL2h0dHAvc2VydmVyLnRzJztcbmltcG9ydCB7IEhvbm8gfSBmcm9tICdob25vJztcbmltcG9ydCB7IHNlcnZlU3RhdGljIH0gZnJvbSBcImhvbm8vbWlkZGxld2FyZVwiO1xuXG5jb25zdCBhcHAgPSBuZXcgSG9ubygpXG5cbmFwcC51c2UoJy8qJyxzZXJ2ZVN0YXRpYyh7IHJvb3Q6IFwiLi9zdGF0aWMvXCIgfSkpXG5cbnNlcnZlKGFwcC5mZXRjaClcbiJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSxTQUFTLEtBQUssUUFBUSwrQ0FBK0M7QUFDckUsU0FBUyxJQUFJLFFBQVEsT0FBTztBQUM1QixTQUFTLFdBQVcsUUFBUSxrQkFBa0I7QUFFOUMsTUFBTSxNQUFNLElBQUk7QUFFaEIsSUFBSSxHQUFHLENBQUMsTUFBSyxZQUFZO0lBQUUsTUFBTTtBQUFZO0FBRTdDLE1BQU0sSUFBSSxLQUFLIn0=

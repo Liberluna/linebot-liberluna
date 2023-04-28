@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Roboto&display=swap');
+
+body{
+  font-family: 'Roboto', 'Noto Sans JP', sans-serif;
+  text-align: center;
+}
+.hono-plus-deno{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hono-plus-deno img{
+  width: 100px;
+  height: 100px;
+}
+code{
+  background-color: #ddd;
+}
