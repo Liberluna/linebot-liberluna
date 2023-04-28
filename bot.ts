@@ -24,7 +24,7 @@ export default async (c: Context) => {
             text: result,
           }],
         };
-        const botRes = await fetch("https://api.line.me/v2/bot/message/reply", {
+        fetch("https://api.line.me/v2/bot/message/reply", {
           method: "post",
           headers: {
             "Content-type": "application/json",
