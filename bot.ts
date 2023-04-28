@@ -16,7 +16,7 @@ export default async (c: Context) => {
         if (json.results.length === 0) {
           result = "え?";
         } else {
-          result = `${json.results[0].content}`;
+          result = `${json.results[0].content.replaceAll("。","。\n").replaceAll("...","")}`;
         }
         const data = {
           replyToken: replyToken,
