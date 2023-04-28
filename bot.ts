@@ -2,7 +2,7 @@ import { Context } from "hono";
 export default async (c: Context) => {
   const msg = await c.req.json();
   for (const event of msg.events) {
-    console.log(event);
+    // console.log(event);
     if (event.type !== "message") {
       continue;
     }
@@ -33,7 +33,7 @@ export default async (c: Context) => {
           },
           "body": JSON.stringify(data),
         });
-        console.log(botRes);
+        //console.log(botRes);
         break;
       }
       default:
