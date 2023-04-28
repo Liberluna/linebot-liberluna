@@ -25,7 +25,7 @@ export default async (c: Context) => {
             text: result,
           }],
         };
-        fetch("https://api.line.me/v2/bot/message/reply", {
+        const botRes = await fetch("https://api.line.me/v2/bot/message/reply", {
           method: "post",
           headers: {
             "Content-type": "application/json",
@@ -33,6 +33,7 @@ export default async (c: Context) => {
           },
           "body": JSON.stringify(data),
         });
+        console.log(botRes);
         break;
       }
       default:
