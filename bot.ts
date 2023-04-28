@@ -2,6 +2,7 @@ import { Context } from "hono";
 export default async (c: Context) => {
   const msg = await c.req.json();
   for (const event of msg.events) {
+    console.log(event);
     if (event.type !== "message") {
       continue;
     }
