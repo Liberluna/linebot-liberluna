@@ -16,7 +16,7 @@ export default async (c: Context) => {
         if (json.results.length === 0) {
           result = "え?";
         } else {
-          result = `${json.results[0].content}\n\nこれで答えになりましたよね？ね？`;
+          result = `${json.results[0].content}`;
         }
         const data = {
           replyToken: replyToken,
