@@ -1,4 +1,6 @@
 import { Context } from "hono";
+import reply from "./bot/reply.ts";
+
 export default async (c: Context) => {
   const msg = await c.req.json();
   for (const event of msg.events) {
@@ -9,7 +11,7 @@ export default async (c: Context) => {
     const { message, replyToken } = event;
     switch (message.type) {
       case "text": {
-        let result = "";
+        /*let result = "";
         const { text } = message;
         const res = await fetch(`https://api.freasearch.org/search?q=${text}`);
         const json = await res.json();
@@ -17,15 +19,15 @@ export default async (c: Context) => {
           result = "え?";
         } else {
           result = `${json.results[0].content.replaceAll("。","。\n").replaceAll("...","")}`;
-        }
+        }*/
         const data = {
           replyToken: replyToken,
           messages: [{
             type: "text",
-            text: result,
+            text: await reply(message.text),
           }],
         };
-        const botRes = await fetch("https://api.line.me/v2/bot/message/reply", {
+        const _botRes = await fetch("https://api.line.me/v2/bot/message/reply", {
           method: "post",
           headers: {
             "Content-type": "application/json",
@@ -33,7 +35,6 @@ export default async (c: Context) => {
           },
           "body": JSON.stringify(data),
         });
-        //console.log(botRes);
         break;
       }
       default:
