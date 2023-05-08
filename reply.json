@@ -3,8 +3,9 @@
   "今の時刻はなんですか": "時計を自分で見なさい",
   "こんにちは": "こんにちは",
   "おはようございます。": "おはようございます。今日の日付は、\"今日\"です。",
-  "サイトは?": "はい。分かりました。Liberlunaのサイトは,\nhttps://liberluna.github.io",
-  "GitHub": "LiberlunaのGitHub organizationは、\nhttps://github.com/Liberluna\nです",
+  "サイトは?": "はい、わかりました。Liberlunaのサイトは、\nhttps://liberluna.github.io\nです",
+  "Youtubeは？: LiberlunaのYoutubeチャンネルは、\nhttps://www.youtube.com/channel/UC9TQpslkQY1nUGdre0G13MA?themeRefresh=1\nです"
+  "GitHubは？": "LiberlunaのGitHub organizationは、\nhttps://github.com/Liberluna\nです",
   "よろしく": "よろしくお願いします。",
   "こんばんは": "こんばんは"
 }
